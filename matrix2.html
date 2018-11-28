@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Matrix</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.9/leaflet.draw.css">
+	<link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+	<link rel="stylesheet" href="css/Control.MiniMap.css">
+	<link rel="stylesheet" href="css/Control.FullScreen.css">
+	<link rel="stylesheet" href="css/L.Control.Sidebar.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" type="text/css" href="css/matrix2.css">
+
+
+</head>
+<body>
+        <h3 style="color:#080808;font-weight:bold">Visor cartográfico de variables demográficas</h3>
+	<div id="sidebar">
+		<h1>Controles</h1>
+		<p><img src="selector.png" width="8%" align="center"></img> Permite seleccionar y activar los mapas de referencia, mapas temáticos y la capa de edición. </p>
+		<p><img src="info.png" width="7%" align="center"></img> Ofrece información sobre los controles. </p>
+		<p><img src="acercar.png" width="8%" align="center"></img> Permite ampliar el mapa. </p>
+		<p><img src="alejar.png" width="8%" align="center"></img> Permite reducir el mapa. </p>
+		<p><img src="pantalla_completa.png" width="8%" align="center"></img> Permite acceder a pantalla completa. </p>
+		<p><img src="medir.png" width="8%" align="center"></img> Permite medir distancias en el mapa. </p>
+		<p><img src="linea.png" width="8%" align="center"></img> Permite dibujar líneas en el mapa que se guardan en la capa de edición. </p>
+		<p><img src="poligono.png" width="8%" align="center"></img> Permite dibujar polígonos en el mapa que se guardan en la capa de edición. </p>
+		<p><img src="marcador.png" width="8%" align="center"></img> Permite añadir marcadores en el mapa que se guardan en la capa de edición. </p>
+		<p><img src="modificar.png" width="8%" align="center"></img> Permite modificar las entidades añadidas al mapa. </p>
+		<p><img src="eliminar.png" width="8%" align="center"></img> Permite eliminar las entidades añadidas al mapa. </p>
+		<p><img src="minimap.png" width="8%" align="center"></img> Permite minimizar el mapa de localización. </p>
+		<p><img src="escala.png" width="9%"></img> Muestra la escala del mapa. </p>
+    </div>
+	<div id="map"></div>
+	<button id="ayuda" role="button"><img src="info.png" width="17" height="28"></button>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.9/leaflet.draw.js"></script>
+	<script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+	<script type="text/javascript" src="js/Control.MiniMap.js" ></script>
+	<script type="text/javascript" src="js/Control.FullScreen.js" ></script>
+	<script type="text/javascript" src="js/L.Control.Sidebar.js" ></script>
+	<script type="text/javascript" src="js/L.Control.Button.js" ></script>
+	<script type="text/javascript" src="js/municipios.js"></script>
+    <script type="text/javascript" src="js/matrix2.js"></script>
+</body>
+</html>
